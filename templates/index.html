@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Finder</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cafe Finder</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search cafes...">
+            <button onclick="searchCafes()">Search</button>
+        </div>
+    </header>
+    <main>
+        <section id="cafeList"></section>
+        <section id="addCafeForm">
+            <h2>Add New Cafe</h2>
+            <form id="newCafeForm">
+                <input type="text" name="name" placeholder="Cafe Name" required>
+                <input type="url" name="map_url" placeholder="Google Maps Link" required>
+                <input type="url" name="img_url" placeholder="Image URL" required>
+                <input type="text" name="location" placeholder="Location" required>
+                <label><input type="checkbox" name="has_wifi"> WiFi Available</label>
+                <label><input type="checkbox" name="has_sockets"> Power Outlets</label>
+                <label><input type="checkbox" name="comfortable_seating"> Comfortable Seating</label>
+                <label><input type="checkbox" name="wheelchair_accessible"> Wheelchair Accessible</label>
+                <input type="number" name="noise_level" placeholder="Noise Level (0-10)" min="0" max="10" required>
+                <input type="text" name="average_cost" placeholder="Average Cost" required>
+                <button type="submit">Add Cafe</button>
+            </form>
+        </section>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>
